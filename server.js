@@ -12,9 +12,10 @@ const authRouter=require("./routes/auth.router");
 const wishlistRouter=require("./routes/wishlist.router");
 const hotelDataAddedToDBRouter = require("./routes/dataimport.router");
 const categoryDataAddedToDBRouter = require("./routes/categoryimport.router");
-
+const cors = require("cors");
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Connect to DB
 connectDB();
