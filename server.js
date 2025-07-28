@@ -12,10 +12,18 @@ const authRouter=require("./routes/auth.router");
 const wishlistRouter=require("./routes/wishlist.router");
 const hotelDataAddedToDBRouter = require("./routes/dataimport.router");
 const categoryDataAddedToDBRouter = require("./routes/categoryimport.router");
-const cors = require("cors");
+
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+const cors = require('cors');
+
+app.use(cors({
+  origin: "https://hotel-booking-client.vercel.app", // replace with your Vercel frontend domain
+  credentials: true,
+}));
+
+
 
 // Connect to DB
 connectDB();
