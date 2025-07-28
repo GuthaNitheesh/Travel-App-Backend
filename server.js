@@ -20,12 +20,11 @@ const cors = require('cors');
 
 app.use(cors({
   origin: [
-    "http://localhost:3000", // local dev
-    "https://travel-app-frontend-fcyc.vercel.app" // deployed frontend
+    
+    "https://travel-app-frontend-fcyc.vercel.app"
   ],
   credentials: true,
 }));
-
 
 
 
