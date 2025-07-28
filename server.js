@@ -19,9 +19,13 @@ app.use(express.json());
 const cors = require('cors');
 
 app.use(cors({
-  origin: "*", // ✅ NO trailing slash
+  origin: [
+    "http://localhost:3000", // local dev
+    "https://travel-app-frontend-fcyc.vercel.app" // deployed frontend
+  ],
   credentials: true,
 }));
+
 
 
 
