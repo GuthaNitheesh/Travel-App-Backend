@@ -19,7 +19,7 @@ app.use(express.json());
 const cors = require('cors');
 
 app.use(cors({
-  origin: "https://travel-app-frontend-fcyc.vercel.app", // ✅ NO trailing slash
+  origin: "*", // ✅ NO trailing slash
   credentials: true,
 }));
 
