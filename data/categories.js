@@ -4,7 +4,7 @@ const categories = {
     "data": [
         { id: uuid(), category: "National Parks" },
         { id: uuid(), category: "Tiny Homes" },
-        { id: uuid(), category: "Farms" },
+        { id: uuid(), category: "Historical Homes" },
         { id: uuid(), category: "Golfing" },
         { id: uuid(), category: "Island" },
         { id: uuid(), category: "Campervans" },
@@ -25,7 +25,8 @@ const categories = {
         { id: uuid(), category: "Amazing Views" },
         { id: uuid(), category: "Castle" },
         { id: uuid(), category: "Iconic Sites" },
-        { id: uuid(), category: "Historical Homes" },
+        
+        { id: uuid(), category: "Farms" },
     ]
 }
     
